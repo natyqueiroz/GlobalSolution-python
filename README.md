@@ -1,28 +1,21 @@
 # Nome do Projeto
 
-**Site publicado:**
 
-# Estrutura do preojeto
-```bash
-
-nomedoprojeto/
-├── nomedoprojeto.py
-├── README.md
-└── PROMPTS.md
-
+## Estrutura do preojeto
 
 ```
+nomedoprojeto/
+├── nomedoprojeto.py
+├── readme.md
+└── prompts.md
+```
 
+## Integrantes
 
-
-
-
-
-# Integrates
-
-| Integrante | 
-| Giovanna Ciola |
-| Gustavo Moreira Souza |
-| Jamil de Jesus Chaluppe Filho |
-| Nathaly Vieira Barbosa |
-| Marina Lobato Soares |
+| Integrante | RM |
+|---|---|
+| Giovanna Ciola | |
+| Gustavo Moreira Souza | |
+| Jamil de Jesus Chaluppe Filho | |
+| Nathaly Vieira Barbosa | 575407 |
+| Marina Lobato Soares | |
