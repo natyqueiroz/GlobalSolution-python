@@ -1,7 +1,7 @@
 bus_names = []
 arrival_time = []
 seat_availabilities = []
-linha_vermelha = []
+red_line = []
 
 print("=== Nome projeto ===")
 print("Integracao com a Linha Vermelha do Metrô \n")
@@ -46,7 +46,7 @@ while True:
             bus_names.append(name)
             arrival_time.append(arrival)
             seat_availabilities.append(availability)
-            linha_vermelha.append(station_names[station_number - 1])
+            red_line.append(station_names[station_number - 1])
 
 
         case 2:
@@ -55,7 +55,7 @@ while True:
             else: 
                 print("--- Ônibus cadastrados ---")
                 for i in range(len(bus_names)):
-                    print(f'Linha {bus_names[i]} - {arrival_time[i]} min - assento {seat_availabilities[i]} - Integracao {linha_vermelha[i]}')
+                    print(f'Linha {bus_names[i]} - {arrival_time[i]} min - assento {seat_availabilities[i]} - Integracao {red_line[i]}')
                 
 
         case 3:
@@ -68,7 +68,7 @@ while True:
                         next_bus = i
                 print(f'Próximo ônibus, Linha {bus_names[next_bus]}, em {arrival_time[next_bus]} minutos.')
                 print(f'Assento preferencial {seat_availabilities[next_bus]}')
-                print(f'Este onibus termina na estação {linha_vermelha[next_bus]} da linha vermelha do metrô.')
+                print(f'Este onibus termina na estação {red_line[next_bus]} da linha vermelha do metrô.')
         case 4:
             print("4 - Simular sensor do ponto")
         case 5:
