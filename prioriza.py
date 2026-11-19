@@ -27,7 +27,7 @@ while True:
     print("\n=== PRIORIZA ===")
     print("1 - Solicitar atendimento prioritario")
     print("2 - Cancelar solicitacao")
-    print("3 - Ver ônibus")
+    print("3 - Ver onibus")
     print("4 - Simular viagem")
     print("5 - Sair")
 
@@ -113,7 +113,7 @@ while True:
                 canceled_name = request_names[index]
                 canceled_amount = request_amounts[index]
 
-                # Remove a solicitação das 4 listas
+                # Remove a solicitacao das 4 listas
                 request_names.pop(index)
                 request_types.pop(index)
                 request_points.pop(index)
@@ -129,7 +129,7 @@ while True:
                 print(f"[MOTORISTA] {canceled_name} cancelou - {canceled_amount} assento(s) liberado(s)")
                 print(f"LED dos assentos preferenciais: {led}")
 
-        # 3 - Ver ônibus e solicitações
+        # 3 - Ver onibus e solicitacoes
 
         case 3:
             print(f"Linha {line} - assentos preferenciais livres: {seat_availabilities} de {seats} - LED {led}")
@@ -156,7 +156,7 @@ while True:
             print("Programa encerrado. Obrigado por usar o Prioriza!")
             break
 
-        # Qualquer outro número
+        # Qualquer outro numero
 
         case _:
-            print("Opção invalida. Digite um numero de 1 a 5.")
+            print("Opcao invalida. Digite um numero de 1 a 5.")
