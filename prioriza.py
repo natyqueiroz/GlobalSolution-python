@@ -7,14 +7,19 @@
 # Nathaly Vieira Barbosa RM 575407
 
 
+# Pontos de embarque da linha, na ordem do trajeto
 stop_points = ["Terminal Pq. D. Pedro II", "Lgo. Pateo do Colegio", "R. Boa Vista, 364"]
+
+# Tipos de atendimento ("NENHUM" nao tem direito ao assento preferencial)
 service_types = ["FISICA", "VISUAL", "AUDITIVA", "IDOSO", "MOBILIDADE REDUZIDA", "GESTANTE", "AUTISTA", "NENHUM"]
+
+# Status que as antenas dos pontos mostram durante a viagem
 bus_status = ["A CAMINHO", "ONIBUS CHEGOU", "ONIBUS ACABOU DE SAIR", "SEM ONIBUS"]
 
-line = "2002-10"
-seats = 3 
-seat_availabilities = 3
-led = "APAGADO"
+line = "2002-10"          # numero da linha simulada
+seats = 3                 # total de assentos preferenciais do onibus
+seat_availabilities = 3   # assentos preferenciais livres no momento
+led = "APAGADO"           # LED do assento preferencial: "ACESO" quando ha reserva
 
 request_names = []
 request_types = []
@@ -53,7 +58,7 @@ while True:
                 type_number = int(input("Escolha o tipo: "))
             passenger_type = service_types[type_number - 1]
 
-            # Verifica os dados antes de pedir o rstante dos dados
+            # Verifica os dados antes de pedir o restante dos dados
             if passenger_type == "NENHUM":
                 print("Este passageiro não tem direito ao assento preferencial.")
             elif seat_availabilities == 0:

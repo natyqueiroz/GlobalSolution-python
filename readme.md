@@ -9,7 +9,7 @@
 | Cidadão beneficiado | Pessoas com direito a atendimento prioritário: deficiência física, visual ou auditiva, idosos, mobilidade reduzida, gestantes e pessoas autistas |
 | Problema, em uma frase | O passageiro com prioridade não consegue avisar o motorista antes de o ônibus chegar e costuma encontrar o assento preferencial ocupado |
 | Como funciona | O passageiro solicita atendimento informando o tipo, o ponto e a quantidade de assentos, o motorista é avisado e o LED do assento preferencial acende. Antenas nos pontos informam onde o ônibus está |
-| O que cada parte faz | `prioriza.py`: menu e lógica do sistema em Python, sem classes. `prompts.md`: registro dos prompts usados com IA. Repositório do site: telas do passageiro e do motorista em HTML, CSS e JavaScript |
+| O que cada parte faz | `prioriza.py`: menu e lógica do sistema em Python. `prompts.md`: registro do uso de IA. Repositório do site: telas do passageiro e do motorista em HTML, CSS e JavaScript |
 | Link do repositório | Python: https://github.com/natyqueiroz/GlobalSolution-python · Site (JS): https://github.com/gustavomsz/GS1semestre |
 | Indicador de impacto | Número de passageiros com prioridade que embarcaram com o motorista avisado e o assento preferencial livre, por linha e por mês |
 | ODS conectados | ODS 10 (Redução das desigualdades) e ODS 11 (Cidades e comunidades sustentáveis) |
@@ -24,9 +24,12 @@ GlobalSolution-python/
 ```
 
 - `prioriza.py`: programa principal, com o menu e a simulação.
-- `prompts.md`: prompts usados com IA durante o desenvolvimento.
+- `readme.md`: descrição do projeto.
+- `prompts.md`: registro de como a IA foi usada no desenvolvimento.
 
 ## Como executar
+
+No terminal, dentro da pasta do projeto:
 
 ```
 python prioriza.py
@@ -36,29 +39,29 @@ python prioriza.py
 
 Pessoas com deficiencia, mobilidade reduzida, idosos, gestantes e outros passageiros prioritarios ainda enfrentam dificuldades na comunicação com os motoristas de onibus.
 
-O **Prioriza** permite que o passageiro solicite atendimento prioritario antes de o onibus chegar ao ponto. Quem solicitado:
+O **Prioriza** permite que o passageiro solicite atendimento prioritario antes de o onibus chegar ao ponto. Ao solicitar:
 
 - o **motorista recebe um aviso** com antecedencia;
 - Um **LED** acende nos assentos preferenciais, indicando aos demais passageiros que o lugar foi requisitado;
 - **Antenas nos pontos** informam o status do onibus.
 
-Esta é a adaptação em Python do sistema feito em JavaScript, usando apenas variáveis, listas, funções, condicionais e repetições, sem classes e métodos. A versão com site está em https://github.com/gustavomsz/GS1semestre.
+Esta é a adaptação em Python do sistema feito em JavaScript, usando apenas variáveis, listas, condicionais e repetições, sem classes e métodos. A versão com site está em https://github.com/gustavomsz/GS1semestre.
 
 ### Menu
 
 | Opção | O que faz |
 |---|---|
-| 1 - Solicitar atendimento prioritario | Pede nome, tipo de atendimento, ponto de embarque e quantidade de assentos. Se o passageiro tiver direito e houver vaga, reserva os assentos, avisa o motorista e acende o LED. |
-| 2 - Cancelar solicitacao | Libera os assentos reservados e avisa o motorista. O LED apaga quando todos os assentos ficam livres. |
-| 3 - Ver onibus | Mostra a linha, os assentos livres e o estado do LED. |
-| 4 - Simular viagem | Mostra o status das antenas em cada ponto da linha ate o ponto final. |
+| 1 - Solicitar atendimento prioritário | Pede nome, tipo de atendimento, ponto de embarque e quantidade de assentos. Se o passageiro tiver direito e houver vaga, guarda a solicitação, reserva os assentos, avisa o motorista e acende o LED. |
+| 2 - Cancelar solicitação | Mostra as solicitações ativas e o usuário escolhe qual cancelar. Os assentos são liberados e o motorista é avisado. O LED apaga quando todos os assentos ficam livres. |
+| 3 - Ver ônibus | Mostra a linha, os assentos livres, o estado do LED e a lista de solicitações ativas. |
+| 4 - Simular viagem | Mostra o status das antenas em cada ponto da linha até o ponto final. |
 | 5 - Sair | Encerra o programa. |
 
 ## Validações
 
 - Opção do menu que nao for entre 1 e 5 dira "Opcao invalida".
 - Se o nome estiver vazio ira pedir novamente.
-- Tipo de atendimento, ponto de embarque e solicitacao para cancelar: so aceitam os numeros das listas prontas (por enquanto).
+- Tipo de atendimento, ponto de embarque e solicitacao para cancelar: so aceitam os numeros das listas prontas.
 - A quantidade de assentos vai de 1 ate o numero de assentos livres.
 - Passageiro do tipo "NENHUM" ou onibus sem assento livre: a solicitação nao e feita.
 
