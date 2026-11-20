@@ -29,6 +29,8 @@ GlobalSolution-python/
 
 ## Como executar
 
+É necessário ter o **Python 3.10 ou mais novo**, porque o programa usa `match/case`.
+
 No terminal, dentro da pasta do projeto:
 
 ```

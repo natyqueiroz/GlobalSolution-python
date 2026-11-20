@@ -21,10 +21,10 @@ seats = 3                 # total de assentos preferenciais do onibus
 seat_availabilities = 3   # assentos preferenciais livres no momento
 led = "APAGADO"           # LED do assento preferencial: "ACESO" quando ha reserva
 
-request_names = []
-request_types = []
-request_points = []
-request_amounts = []
+request_names = []      # nome de cada passageiro
+request_types = []      # tipo de atendimento de cada passageiro
+request_points = []     # ponto de embarque de cada passageiro
+request_amounts = []    # quantidade de assentos reservados por cada passageiro
 
 # MENU PRINCIPAL
 
