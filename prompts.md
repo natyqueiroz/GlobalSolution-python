@@ -7,7 +7,7 @@
 | Claude (Anthropic) | Tirar duvidas de Python e Git, organizar a estrutura de pastas e os arquivos de documentacao |
 
 **Periodo:** novembro de 2026
-**Responsavel pelas conversas:** Nathaly Vieira Barbosa - RM 575407
+**Responsavel pelas conversas:** Nathaly Vieira Barbosa - RM 575407 / Gustavo Moreira Souza - RM 576147
 
 ---
 
@@ -20,6 +20,7 @@
 **O que a IA fez:**
 - Explicou que o `match/case` exige Python 3.10 ou mais novo e como trocar o interpretador no VS Code.
 - Sugeriu a estrutura de pastas usada no projeto.
+- Auxiliou na busca da ODS que o sistema se enquadra. Tal informação foi incluida na criação da Ficha da CitizenTech.
 
 ## 2. Duvidas sobre estrutura de repeticao
 

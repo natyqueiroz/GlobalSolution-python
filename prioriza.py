@@ -1,10 +1,10 @@
 # PRIORIZA
 # Time 404
 # Giovanna Ciola RM 575631
-# Nathaly Vieira Barbosa RM 575407
-# Marina Lobato Soares RM 575475
-# Jamil de Jesus Chaluppe Filho RM 575697
 # Gustavo Moreira Souza RM 576147
+# Jamil de Jesus Chaluppe Filho RM 575697
+# Marina Lobato Soares RM 575475
+# Nathaly Vieira Barbosa RM 575407
 
 
 stop_points = ["Terminal Pq. D. Pedro II", "Lgo. Pateo do Colegio", "R. Boa Vista, 364"]
